@@ -92,3 +92,11 @@ Iteration 4
 . . . . . . . . . . 
 . . . . . . . . . . 
 ```
+
+# Usage
+### Compile
+`javac -d classes src/*.java`
+### Run
+`java -cp classes Main <gol_file_path>`
+### Example
+`java -cp classes Main gol/test.gol`

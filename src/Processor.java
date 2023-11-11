@@ -138,12 +138,4 @@ public class Processor {
         return aliveNeighbours;
     }
 
-
-    public void evaluate() {
-
-    }
-
-
-
-
 }
