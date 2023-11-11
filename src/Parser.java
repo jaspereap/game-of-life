@@ -51,7 +51,7 @@ public class Parser {
         currentRow++;
     }
 
-    public void printGrid(char[][] inputGrid) {
+    public static void printGrid(char[][] inputGrid) {
         for (char[] row : inputGrid) {
             for (char c : row) {
                 System.out.print(c + " ");
