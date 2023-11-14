@@ -24,7 +24,7 @@ public class Parser {
     public void intialiseGrid(Integer X, Integer Y) {
         grid = new char[X][Y];
         for (char[] row : grid) {
-            Arrays.fill(row, '.');
+            Arrays.fill(row, Constants.UNSHADED);
         }
         currentRow = rowOffset;
         currentCol = colOffset;
@@ -114,7 +114,6 @@ public class Parser {
         } catch (IOException ie) {
             ie.printStackTrace();
         }
-
     }
 
     public char[][] getGrid() {
