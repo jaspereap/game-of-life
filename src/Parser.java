@@ -22,7 +22,7 @@ public class Parser {
     }
 
     public void intialiseGrid(Integer X, Integer Y) {
-        grid = new char[X][Y];
+        grid = new char[Y][X];
         for (char[] row : grid) {
             Arrays.fill(row, Constants.UNSHADED);
         }
@@ -38,9 +38,9 @@ public class Parser {
         // System.out.println("Length of char: " + cArray.length);
         for (int i = 0; i < cArray.length; i++) {
             if (cArray[i] == ' ') {
-                grid[currentRow][currentCol] = Constants.UNSHADED;
+                grid[currentRow - 1][currentCol - 1] = Constants.UNSHADED;
             } else {
-                grid[currentRow][currentCol] = cArray[i];
+                grid[currentRow - 1][currentCol - 1] = cArray[i];
             }
             // increment column
             currentCol++;
